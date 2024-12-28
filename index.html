@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades CSS: display e visibility</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Manipulando Elementos com CSS</h1>
+
+    <!-- CSS Inline para parágrafo -->
+    <p style="color: blue; font-weight: bold;">Este parágrafo usa estilo CSS inline.</p>
+
+    <!-- Parágrafo com classe aplicada -->
+    <p class="hidden">Este parágrafo está oculto usando display: none.</p>
+
+    <p class="invisible">Este parágrafo está invisível, mas ainda ocupa espaço.</p>
+
+    <p class="inline">Este parágrafo está exibido como inline.</p>
+
+    <p class="block">Este parágrafo está exibido como block.</p>
+
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+
+    <script>
+        function toggleVisibility() {
+            const element = document.querySelector('.invisible');
+            if (element.style.visibility === 'hidden') {
+                element.style.visibility = 'visible';
+            } else {
+                element.style.visibility = 'hidden';
+            }
+        }
+    </script>
+</body>
+</html>

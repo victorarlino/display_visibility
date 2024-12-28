@@ -1,0 +1,15 @@
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
